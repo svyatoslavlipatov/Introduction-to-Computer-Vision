@@ -8,7 +8,7 @@ def calculate_nominal_resolution(filename):
         resolution = max_size_mm / image_data.shape[1]
         return resolution
     
-filenames = ["figure1.txt", "figure2.txt", "figure4.txt", "figure5.txt", "figure6.txt"]
+filenames = ["files/figure1.txt", "files/figure2.txt", "files/figure4.txt", "files/figure5.txt", "files/figure6.txt"]
 for filename in filenames:
     resolution = calculate_nominal_resolution(filename)
     print(f"Номинальное разрешение для {filename}: {resolution} мм/пиксель")
