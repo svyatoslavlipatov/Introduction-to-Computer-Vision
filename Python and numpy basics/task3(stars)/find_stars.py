@@ -1,11 +1,7 @@
-import os
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage.morphology import binary_erosion
 from skimage.measure import label
-
-current_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(current_dir, "stars", "stars.npy")
 
 sky = np.load("task3(stars)/stars/stars.npy")
 
