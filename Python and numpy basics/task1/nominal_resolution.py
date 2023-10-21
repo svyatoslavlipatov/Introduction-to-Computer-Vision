@@ -7,7 +7,7 @@ def calculate_nominal_resolution(filename):
         image_data = np.loadtxt(file, dtype=int)
         resolution = max_size_mm / image_data.shape[1]
         return resolution
-        
+    
 filenames = ["Python and numpy basics/task1/files/figure1.txt", 
              "Python and numpy basics/task1/files/figure2.txt",
              "Python and numpy basics/task1/files/figure4.txt",
