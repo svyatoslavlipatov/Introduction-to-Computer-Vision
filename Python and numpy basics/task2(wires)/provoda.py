@@ -1,13 +1,9 @@
-import os
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage.morphology import binary_erosion
 from skimage.measure import label
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(current_dir, "wires", "wires6.npy")
-
-wires = np.load(file_path)
+wires = np.load("task2(wires)/wires/wires6.npy")
 struct = np.ones((3, 1))
 labeled = label(wires)
 
