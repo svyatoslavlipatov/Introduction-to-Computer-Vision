@@ -12,8 +12,8 @@ def find_object_coordinates(image):
     return min_y, min_x
 
 def load_images(read_image, find_object_coordinates):
-    img1 = read_image('files/img1.txt')
-    img2 = read_image('files/img2.txt')
+    img1 = read_image('task1/files/img1.txt')
+    img2 = read_image('task1/files/img2.txt')
     min_y1, min_x1= find_object_coordinates(img1)
     min_y2, min_x2 = find_object_coordinates(img2)
     # print(f"Координаты первого изображения {min_y1}, {min_x1}")
