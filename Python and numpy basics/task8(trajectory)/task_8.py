@@ -12,6 +12,7 @@ for i in range(100):
 plt.figure(figsize=(8, 8))
 
 object_colors = {}
+object_positions = {}
 
 for i, h_area in enumerate(h_area_lst):
     eroded = binary_erosion(h_area)
@@ -23,9 +24,12 @@ for i, h_area in enumerate(h_area_lst):
         y, x = prop.centroid
         
         color = object_colors.setdefault(label_value, 'purple' if len(object_colors) % 2 == 0 else 'red')
+        if label_value in object_positions:
+            prev_x, prev_y = object_positions[label_value]
+            plt.plot([prev_x, x], [prev_y, y], color=color)  # Линия между предыдущей и текущей позициями
         
-        color = object_colors[label_value]
-        plt.scatter(x, y, color=color, s=20)
+        # color = object_colors[label_value]
+        # plt.scatter(x, y, color=color, s=20)
 
 plt.title("Траектория движения")
 # plt.imshow(labeled, cmap='viridis')
