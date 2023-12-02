@@ -30,6 +30,7 @@ for i, h_area in enumerate(h_area_lst):
         
         # color = object_colors[label_value]
         # plt.scatter(x, y, color=color, s=20)
+        object_positions[label_value] = (x, y)
 
 plt.title("Траектория движения")
 # plt.imshow(labeled, cmap='viridis')
