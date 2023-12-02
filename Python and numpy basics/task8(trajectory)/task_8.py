@@ -26,7 +26,7 @@ for i, h_area in enumerate(h_area_lst):
         color = object_colors.setdefault(label_value, 'purple' if len(object_colors) % 2 == 0 else 'red')
         if label_value in object_positions:
             prev_x, prev_y = object_positions[label_value]
-            plt.plot([prev_x, x], [prev_y, y], color=color)  # Линия между предыдущей и текущей позициями
+            plt.plot([prev_x, x], [prev_y, y], color=color)  
         
         # color = object_colors[label_value]
         # plt.scatter(x, y, color=color, s=20)
