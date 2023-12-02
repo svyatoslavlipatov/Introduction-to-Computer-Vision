@@ -39,7 +39,7 @@ def process_image(image_path):
 
     return orange_count, green_count, blue_count
 
-image_folder = "Python and numpy basics/task7(pencils)/images/"
+image_folder = "Python and numpy basics/task7_pencils_/images/"
 
 if not os.path.exists(image_folder):
     print(f"Путь {image_folder} не найден!")
