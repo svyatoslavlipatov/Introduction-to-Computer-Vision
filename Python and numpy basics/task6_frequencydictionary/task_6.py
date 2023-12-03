@@ -68,7 +68,7 @@ def recognize(region):
 
     return '_'
 
-def analyze_symbols(image_path='Python and numpy basics/task7_pencils_/images/symbols.png'):
+def analyze_symbols(image_path='Python and numpy basics/task6_frequencydictionary/images/symbols.png'):
     image = plt.imread(image_path).min(2)
     image[image > 0] = 1
     labeled = label(image)
