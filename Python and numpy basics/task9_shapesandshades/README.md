@@ -19,4 +19,4 @@
 > 🟨 Всего 51 фигуры зеленого цвета  
 > Кругов: 19, Прямоугольников: 32
 
-> ![image](https://github.com/svyatoslavlipatov/Introduction-to-Computer-Vision/assets/92099105/507d9544-7822-4ebe-a693-32b0f599af5c)
+![image](https://github.com/svyatoslavlipatov/Introduction-to-Computer-Vision/assets/92099105/507d9544-7822-4ebe-a693-32b0f599af5c)
